@@ -27,3 +27,15 @@ class HttpResponse:
             for key, value in self.headers.items():
                 self.connection.insert_response_header(key, value)
         return self.connection.send(self.body, finish=True).__await__()
+
+
+class JsonResponse(HttpResponse):
+    def __init__(
+        self, data: Any, connection: Optional[Connection] = None, *args, **kwargs
+    ):
+        body = json.dumps(data)
+        headers = kwargs.get("headers")
+        if headers is None:
+            headers = {}
+        headers["content-type"] = "application/json"
+        super().__init__(body, connection, *args, **kwargs)
