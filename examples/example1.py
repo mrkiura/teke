@@ -1,4 +1,4 @@
-from pronto import JsonResponse, Router, create_app
+from teke import JsonResponse, Router, create_app
 
 router = Router()
 

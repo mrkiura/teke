@@ -1,5 +1,5 @@
 import asyncio
-from pronto import HttpResponse, JsonResponse, Router, create_app
+from teke import HttpResponse, JsonResponse, Router, create_app
 
 
 router = Router()
