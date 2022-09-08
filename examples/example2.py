@@ -1,5 +1,7 @@
 import asyncio
-from pronto import Connection, HttpResponse, JsonResponse, Router, create_app
+from pronto import HttpResponse, JsonResponse, Router, create_app
+
+
 router = Router()
 
 @router.route('/')
