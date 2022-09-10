@@ -15,7 +15,7 @@ $ pip install teke
 You'll also want to install an ASGI server, such as [uvicorn](http://www.uvicorn.org/), [daphne](https://github.com/django/daphne/), or [hypercorn](https://pgjones.gitlab.io/hypercorn/).
 
 ```shell
-$ pip install uvicorn
+$ pip install "uvicorn[standard]"
 ```
 
 ## Example
