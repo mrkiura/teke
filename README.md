@@ -1,4 +1,7 @@
 # Teke
+![teke logo cropped](https://user-images.githubusercontent.com/17288133/190925320-8d83bb3b-0019-4994-b2a6-6d6e5f33a386.jpeg)
+
+
 
 Teke is a lightweight [ASGI](https://asgi.readthedocs.io/en/latest/) framework that you can use to create fast async REST APIs with Python.
 
